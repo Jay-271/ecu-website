@@ -1,0 +1,55 @@
+body {
+  background-size: cover;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px
+}
+
+.main-body {
+  background-color: rgba(255, 255, 255, 0.945);
+  opacity: 0.96;
+  padding: 1rem;
+  margin-top: 7px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  /*Adding overflow: hidden; triggers a new block formatting context that prevents .navBar from "collapsing" when it has floated children.*/
+  overflow: hidden;
+  background-color: #333;
+  display: flex;
+  /* align center */
+  justify-content: center;
+}
+
+li {
+  /*without this, your navigation bar will be vertical*/
+  float: left;
+}
+
+li a {
+  /*display: block Takes up the full width available, with a new line before and after (display:block;)*/
+  /*display: inline Takes up only as much width as it needs, and does not force new lines (display:inline;)*/
+  display: block;
+  color: white;
+  /*text-align: center;*/
+  /*14px up and down, 16 px left and right*/
+  padding: 14px 16px;
+  /*default style includes an ugly underline*/
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #111;
+  color: white;
+  transition: all ease-in-out .2s;
+}
+
+li a:hover {
+  background-color: #555;
+  color: rgb(111, 224, 96);
+  transition: all ease-in-out .2s;
+
+}

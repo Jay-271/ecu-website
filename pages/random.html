@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+	  <link rel="stylesheet" href="../index.css" />
+
+    <title>Jason's Homepage!</title>
+  </head>
+<body style="background: url('../src/background.png') no-repeat center center fixed; background-size: cover;"></body>
+   <!-- This is the header portion -->
+    <div class="header">
+      <ul>
+        <li><a href="../index.html">Homepage</a></li>
+        <li><a href="background.html">Background</a></li>
+        <li><a class="active" href="random.html">Random Cat Facts</a></li>
+      </ul>
+    </div>
+
+   <!-- This is the main body -->
+   <div class="main-body">
+    <div
+    style="
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: 'Times New Roman', Times, serif;
+    "
+  >
+    <h1 style="align-self: center; font-size: 3rem">
+      Random cat facts!!!
+      <h3 style="margin: 0; padding: 5px">(Different every time you refresh)</h3>
+    </h1>
+    <p id="cat-fact" style="align-self: center; font-size: 1.5rem; line-height: 1.5; margin: 0; padding: 1rem">
+      
+    </p>
+    <h2 style="margin-top: 0">Anyways thats it for now, bye bye~</h2>
+  </div>
+
+  <script src="./random.js"></script>
+  </body>
+
+</html>
